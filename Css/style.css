@@ -196,9 +196,6 @@ h1.team-title {
     content: url('/img/antenna.png');
 }
 
-.description-item-2::before {
-    content: url('/img/Clock.png');
-}
 
 .description-item-3::before {
     content: url('/img/computer-diagram.png');
