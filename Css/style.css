@@ -193,14 +193,17 @@ h1.team-title {
 }
 
 .description-item-1::before {
-    content: url('/img/antenna.png');
+    content: url('./img/antenna.png');
 }
 
+.description-item-2::before {
+    content: url('./img/Clock.png');
+}
 
 .description-item-3::before {
-    content: url('/img/computer-diagram.png');
+    content: url('./img/computer-diagram.png');
 }
 
 .description-item-4::before {
-    content: url('/img/astronaut.png');
+    content: url('./img/astronaut.png');
 }
