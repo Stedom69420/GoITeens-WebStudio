@@ -183,38 +183,7 @@ h1.team-title {
     justify-content: space-evenly;
 }
 
-.description-item-1::before {
-    content: url('/img/antenna.png');
-    background-color: var(--description-icon-background);
-    height: 120px;
-    width: 270px;
-    display: block;
-    text-align: center;
-    margin-right: 30px;
-}
-
-.description-item-2::before {
-    content: url('/img/Clock.png');
-    background-color: var(--description-icon-background);
-    height: 120px;
-    width: 270px;
-    display: block;
-    text-align: center;
-    margin-right: 30px;
-}
-
-.description-item-3::before {
-    content: url('/img/computer-diagram.png');
-    background-color: var(--description-icon-background);
-    height: 120px;
-    width: 270px;
-    display: block;
-    text-align: center;
-    margin-right: 30px;
-}
-
-.description-item-4::before {
-    content: url('/img/astronaut.png');
+.before {
     background-color: var(--description-icon-background);
     height: 120px;
     width: 270px;
