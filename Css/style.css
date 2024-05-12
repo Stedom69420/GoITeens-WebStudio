@@ -120,6 +120,7 @@ h1.team-title {
     margin: 0;
     width: 270px;
     background-color: var(--team-figure-background);
+    box-shadow: 0 2px 3px #000000;;
 }
 
 .team-photo {
