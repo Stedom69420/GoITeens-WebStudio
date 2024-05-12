@@ -49,6 +49,7 @@ body {
 }
 
 .section-effective-solutions {
+    background-image: url('../img/section-background.png');
     padding: 200px 0px;
 }
 
@@ -183,11 +184,27 @@ h1.team-title {
     justify-content: space-evenly;
 }
 
-.before {
+.description-item::before {
     background-color: var(--description-icon-background);
     height: 120px;
     width: 270px;
     display: block;
     text-align: center;
     margin-right: 30px;
+}
+
+.description-item-1::before {
+    content: url('../img/antenna.png');
+}
+
+.description-item-2::before {
+    content: url('../img/Clock.png');
+}
+
+.description-item-3::before {
+    content: url('../img/computer-diagram.png');
+}
+
+.description-item-4::before {
+    content: url('../img/astronaut.png');
 }
