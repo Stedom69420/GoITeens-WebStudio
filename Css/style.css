@@ -209,3 +209,36 @@ h1.team-title {
 .description-item-4::before {
     content: url('../img/astronaut.png');
 }
+.footer-invite{
+    color: var(--footer-text-adress);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 117%;
+}
+.footer-wrap {
+    display: flex;
+}
+.footer-wrap-two {
+    margin-left: 70px;
+}
+.regular-clients-link{
+    border: 1px solid grey;
+    width: 170px;
+    display: block;
+    text-align: center;
+}
+.regular-clients-link:hover {
+    border: 1px solid #2196F3;
+}
+.regular-clients-svg:hover{
+    fill: #2196F3;
+}
+.regular-clients-svg {
+    width: 106px;
+    fill: #AFB1B8;
+}
+.sosial-media-icons-svg {
+    width: 44px;
+    fill: #FFFFFF;
+    margin-right: 10px;
+}
