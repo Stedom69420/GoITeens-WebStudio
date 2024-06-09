@@ -238,13 +238,14 @@ h1.team-title {
     fill: #AFB1B8;
 }
 .sosial-media-icons-svg {
-    width: 44px;
+    width: 20px;
+    height: 20px;
     fill: #FFFFFF;
+}
+.footer-link {
     margin-right: 10px;
+    margin-top: 20px;
     padding: 44px;
     border-radius: 50%;
-    background-color: #AFB1B8;
-}
-.sosial-media-icons-svg:hover {
-    background-color: #2196F3;
+    background-color: #FFFFFF1A;
 }
