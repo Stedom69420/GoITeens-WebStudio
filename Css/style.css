@@ -243,9 +243,43 @@ h1.team-title {
     fill: #FFFFFF;
 }
 .footer-link {
+    width: 44px;
+    height: 44px;
     margin-right: 10px;
     margin-top: 20px;
-    padding: 44px;
+    text-align: center;
+    align-content: center;
     border-radius: 50%;
     background-color: #FFFFFF1A;
+    display: inline-block;
+}
+.footer-link:hover {
+    background-color: #2196F3;
+}
+.people-sosial-media-icons-svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    padding: 10px;
+}
+.people-sosial-media-icons-svg:hover{
+    fill: #FFFFFF;
+}
+.people-link{
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 16px;
+}
+.people-link:hover{
+    background-color: #2196F3;
+}
+.people-sosial-icon{
+    text-align: center;
 }
