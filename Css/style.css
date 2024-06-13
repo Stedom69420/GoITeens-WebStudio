@@ -283,3 +283,27 @@ h1.team-title {
 .people-sosial-icon{
     text-align: center;
 }
+.what-we-do-item{
+    position: relative;
+}
+.what-we-do-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.what-we-do-text{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
+    background-color: #2F303ACC;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    line-height: 117%;
+    padding: 27px 0 27px 0;
+}
