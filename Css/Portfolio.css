@@ -19,7 +19,7 @@
     color: blue;
 }
 ul {
-    color: white;
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
