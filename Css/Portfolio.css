@@ -1,7 +1,7 @@
 :root {
     --header-background: #FFFFFF;
-    --header-link: #212121;
-    --header-border: #ECECEC;
+    --header-item: #212121;
+    --text-hover-color: #2196F3;
     --button-background: #F5F4FA;
     --button-text: #212121;
     --button-background-hover: #2196F3;
@@ -21,6 +21,8 @@
 ul {
     color: white;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .container {
     width: 1170px;
@@ -32,19 +34,47 @@ body {
 }
 .header {
     background-color: var(--header-background);
-    border-bottom: solid 1px var(--header-border);
-    
 }
-.header-list{
-    display: flex;
-    justify-content: space-between;
-}
+
 .header-link {
     font-weight: 500;
     line-height: 117%;
-    color: var(--header-link);
-    font-size: 14px;
+    color: var(--header-item);
+    text-decoration: none;
 }
+
+.header-group-1{
+    display: flex;
+}
+
+.header-item-group-1{
+    margin-right: 50px;
+}
+
+.header-group-2 {
+    display: flex;
+}
+
+.header-item-group-2 {
+    margin-right: 30px;
+    color: #757575;
+}
+
+.header-mail {
+    color: #757575;
+    fill: #757575;
+}
+
+.header-phone {
+    color: #757575;
+    fill: #757575;
+}
+
+.header-link:hover {
+    color: var(--text-hover-color);
+    fill: var(--text-hover-color);
+}
+
 .section-buttons {
     margin-top: 94px;
 }

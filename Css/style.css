@@ -23,7 +23,7 @@
 }
 
 ul {
-    color: white;
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -44,8 +44,36 @@ body {
     text-decoration: none;
 }
 
+.header-group-1{
+    display: flex;
+}
+
+.header-item-group-1{
+    margin-right: 50px;
+}
+
+.header-group-2 {
+    display: flex;
+}
+
+.header-item-group-2 {
+    margin-right: 30px;
+    color: #757575;
+}
+
+.header-mail {
+    color: #757575;
+    fill: #757575;
+}
+
+.header-phone {
+    color: #757575;
+    fill: #757575;
+}
+
 .header-link:hover {
     color: var(--text-hover-color);
+    fill: var(--text-hover-color);
 }
 
 .section-effective-solutions {
@@ -120,7 +148,8 @@ h1.team-title {
     margin: 0;
     width: 270px;
     background-color: var(--team-figure-background);
-    box-shadow: 0 2px 3px #000000;;
+    box-shadow: 0 2px 3px #000000;
+    ;
 }
 
 .team-photo {
@@ -185,13 +214,16 @@ h1.team-title {
     justify-content: space-evenly;
 }
 
+.description-item {
+    width: 270px;
+}
+
 .description-item::before {
     background-color: var(--description-icon-background);
-    height: 120px;
-    width: 270px;
+    width: 100%;
+    padding: 25px 0;
     display: block;
     text-align: center;
-    margin-right: 30px;
 }
 
 .description-item-1::before {
@@ -209,42 +241,56 @@ h1.team-title {
 .description-item-4::before {
     content: url('../img/astronaut.png');
 }
-.footer-invite{
+
+.footer-invite {
     color: var(--footer-text-adress);
     font-weight: 700;
     font-size: 14px;
     line-height: 117%;
 }
+
 .footer-wrap {
     display: flex;
 }
+
 .footer-wrap-two {
     margin-left: 70px;
 }
-.regular-clients-link{
+
+.section-regular-clients {
+    padding: 94px 0;
+}
+.regular-clients-link {
     border: 1px solid grey;
     width: 170px;
     display: block;
     text-align: center;
 }
+
 .regular-clients-link:hover {
     border: 1px solid #2196F3;
 }
-.regular-clients-svg:hover{
+
+.regular-clients-svg:hover {
     fill: #2196F3;
 }
+
 .regular-clients-svg {
     width: 106px;
+    height: 60px;
+    padding: 16px 32px;
     fill: #AFB1B8;
 }
+
 .sosial-media-icons-svg {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
 }
+
 .footer-link {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     margin-top: 20px;
     text-align: center;
@@ -253,21 +299,25 @@ h1.team-title {
     background-color: #FFFFFF1A;
     display: inline-block;
 }
+
 .footer-link:hover {
     background-color: #2196F3;
 }
+
 .people-sosial-media-icons-svg {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
     padding: 10px;
 }
-.people-sosial-media-icons-svg:hover{
+
+.people-sosial-media-icons-svg:hover {
     fill: #FFFFFF;
 }
-.people-link{
-    width: 44px;
-    height: 44px;
+
+.people-link {
+    width: 40px;
+    height: 40px;
     display: inline-block;
     margin-right: 10px;
     border-radius: 50%;
@@ -277,23 +327,27 @@ h1.team-title {
     margin-bottom: 30px;
     margin-top: 16px;
 }
-.people-link:hover{
+
+.people-link:hover {
     background-color: #2196F3;
 }
-.people-sosial-icon{
+
+.people-sosial-icon {
     text-align: center;
 }
-.what-we-do-item{
+
+.what-we-do-item {
     position: relative;
 }
-.what-we-do-photo{
+
+.what-we-do-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.what-we-do-text{
+.what-we-do-text {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -307,3 +361,32 @@ h1.team-title {
     line-height: 117%;
     padding: 27px 0 27px 0;
 }
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    background-color: skyblue;
+    transform: translate(-50%, -50%);
+  }
