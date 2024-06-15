@@ -44,11 +44,11 @@ body {
     text-decoration: none;
 }
 
-.header-group-1{
+.header-group-1 {
     display: flex;
 }
 
-.header-item-group-1{
+.header-item-group-1 {
     margin-right: 50px;
 }
 
@@ -251,6 +251,7 @@ h1.team-title {
 
 .footer-wrap {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-wrap-two {
@@ -260,6 +261,7 @@ h1.team-title {
 .section-regular-clients {
     padding: 94px 0;
 }
+
 .regular-clients-link {
     border: 1px solid grey;
     width: 170px;
@@ -361,33 +363,139 @@ h1.team-title {
     line-height: 117%;
     padding: 27px 0 27px 0;
 }
-.backdrop {
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    top: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
+    top: 0;
     width: 100%;
+    /* Full width */
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-  }
-  
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  .no-scroll {
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    overflow: auto;
+    /* Enable scroll if needed */
+    display: flex;
+    /* New */
+    align-items: center;
+    /* New */
+    justify-content: center;
+    /* New */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #888;
+    background-color: #fefefe;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* This class is added/removed to show/hide the modal */
+.is-hidden {
+    display: none;
+}
+
+/* This class is added to the body to prevent scrolling when the modal is open */
+.no-scroll {
     overflow: hidden;
-  }
-  
-  .modal {
+}
+
+.form-input {
+    border-radius: 4px;
+    width: 448px;
+}
+
+.input-with-icon:nth-child(-n+3) {
+    padding-left: 30px;
+    height: 40px;
+    width: 418px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-checkbox::after {
+    content: ("Погоджуюся з розсилкою та приймаю Умови договору");
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
     position: absolute;
+    left: 10px;
+    /* Position the icon inside the input */
     top: 50%;
-    left: 50%;
-    min-width: 400px;
-    min-height: 300px;
-    padding: 15px;
-    background-color: skyblue;
-    transform: translate(-50%, -50%);
-  }
-  /*I need a new commit/*
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Prevent the icon from blocking input interactions */
+    color: #aaa;
+    /* Icon color */
+}
+
+.footer-subscribe {
+    color: var(--footer-text-adress);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 117%;
+}
+
+.footer-subscribe-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187.5%;
+    align-content: center;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.footer-wrap-3-1 {
+    display: flex;
+}
+
+.footer-input {
+    border: 1px solid #FFFFFF4D;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+.footer-wrap-3-svg {
+    fill: #FFFFFF;
+    height: 24px;
+    width: 24px;
+}

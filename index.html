@@ -47,7 +47,7 @@
         <h1 class="effective-solutions-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ
           <br /> ВАШОГО БІЗНЕСУ
         </h1>
-        <button class="effective-solutions-button">Замовити послугу</button>
+        <button class="effective-solutions-button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <section class="section-description">
@@ -304,10 +304,53 @@
             </a>
           </div>
         </div>
+        <div class="footer-wrap-three">
+          <h3 class="footer-subscribe">Підпишіться на розсилку</h3>
+          <div class="footer-wrap-3-1">
+            <form class="footer-wrap-3-form">
+              <label class="footer-wrap-3-label">
+                <input class="footer-input" type="email" name="email" placeholder="Your e-mail*" required>
+              </label>
+            </form>
+            <button class="footer-subscribe-button">Підписатися 
+              <svg class="footer-wrap-3-svg">
+                <use href="symbol-defs.svg#sent-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+
   </footer>
-  <!--I need a new commit-->
+  <div data-modal class="modal is-hidden">
+    <div class="modal-content">
+      <span class="close" data-modal-close>&times;</span>
+      <!-- modal content here -->
+      <form class="modal-form">
+        <label>
+          <input class="input-with-icon form-input" type="text" name="name" placeholder="Your name*" minlength="3"
+            required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+        </label>
+        <label>
+          <input class="input-with-icon form-input" type="tel" name="tel" placeholder="Your phone*" required min="10"
+            max="20">
+        </label>
+        <label class="input-wrapper">
+          <input class="input-with-icon form-input" type="email" name="email" placeholder="Your e-mail*" required>
+          <span class="icon">
+            <svg>
+              <use>
+            </svg>
+          </span>
+        </label>
+        <textarea class="form-input" name="message" id="" cols="30" rows="10" placeholder="Введіть текст" required
+          minlength="20"></textarea>
+        <input type="checkbox" class="input-checkbox">
+      </form>
+    </div>
+  </div>
+  <script src="model.js"></script>
 </body>
 
 </html>
