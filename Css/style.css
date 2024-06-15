@@ -474,7 +474,7 @@ h1.team-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 187.5%;
-    align-content: center;
+    align-items: center;
     background-color: #2196F3;
     color: #FFFFFF;
     width: 200px;
@@ -498,4 +498,5 @@ h1.team-title {
     fill: #FFFFFF;
     height: 24px;
     width: 24px;
+    align-self: center;
 }
