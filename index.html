@@ -309,7 +309,7 @@
           <div class="footer-wrap-3-1">
             <form class="footer-wrap-3-form">
               <label class="footer-wrap-3-label">
-                <input class="footer-input" type="email" name="email" placeholder="Your e-mail*" required>
+                <input class="subscribe-input" type="email" name="email" placeholder="Your e-mail*" required>
               </label>
             </form>
             <button class="footer-subscribe-button">
@@ -328,26 +328,47 @@
     <div class="modal-content">
       <span class="close" data-modal-close>&times;</span>
       <!-- modal content here -->
+      <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
       <form class="modal-form">
-        <label>
-          <input class="input-with-icon form-input" type="text" name="name" placeholder="Your name*" minlength="3"
-            required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
-        </label>
-        <label>
-          <input class="input-with-icon form-input" type="tel" name="tel" placeholder="Your phone*" required min="10"
-            max="20">
-        </label>
-        <label class="input-wrapper">
-          <input class="input-with-icon form-input" type="email" name="email" placeholder="Your e-mail*" required>
-          <span class="icon">
-            <svg>
-              <use>
+        <div class="label-input-wrap">
+          <label for="name" class="footer-label label-name">Ім'я</label>
+          <input class="form-input input-with-icon" type="text" name="name" placeholder="" minlength="3" required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <span class="icon-span">
+              <svg class="input-svg">
+                <use class="svg" href="symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
+        </div>
+        <div class="label-input-wrap">
+          <label for="name" class="footer-label label-telephone">Телефон</label>
+          <input class="form-input input-with-icon" type="tel" name="tel" placeholder="" required min="10" max="20">
+          <span class="icon-span">
+            <svg class="input-svg">
+              <use class="svg" href="symbol-defs.svg#icon-call"></use>
             </svg>
           </span>
-        </label>
-        <textarea class="form-input" name="message" id="" cols="30" rows="10" placeholder="Введіть текст" required
-          minlength="20"></textarea>
-        <input type="checkbox" class="input-checkbox">
+        </div>
+        <div class="label-input-wrap">
+          <label for="name" class="footer-label label-email">Пошта</label>
+          <input class="form-input input-with-icon" type="email" name="email" placeholder="" required>
+          <span class="icon-span">
+            <svg class="input-svg">
+              <use class="svg" href="symbol-defs.svg#icon-email"></use>
+            </svg>
+          </span>
+        </div>
+        <div class="comment-wrap">
+          <label class="footer-label label-comment">Коментар</label>
+          <textarea class="form-input" name="message" id="comment" cols="30" rows="10" placeholder="Введіть текст" required
+            minlength="20"></textarea>
+        </div>
+        <div class="checkbox-wrap">
+          <input type="checkbox" name="confirm" id="confirm" class="input-checkbox" required>
+          <label class="footer-label-2">Погоджуюся з розсилкою та приймаю 
+            <span class="footer-span">Умови договору</span></label>
+        </div>
+        <button class="footer-sent-button">Відправити</button>
       </form>
     </div>
   </div>
