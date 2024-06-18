@@ -410,7 +410,7 @@ h1.team-title {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #2196F3;
     text-decoration: none;
     cursor: pointer;
 }
@@ -495,7 +495,14 @@ h1.team-title {
     border: 1px solid #21212133;
     margin-bottom: 10px;
 }
-
+.form-input:focus {
+    border: 1px solid #2196F3;
+    border-radius: 2px;
+    outline-width: 0;
+}
+.label-input-wrap:focus-within .input-svg {
+    fill: #2196F3;
+}
 .footer-label-2 {
     font-weight: 400;
     color: #757575;
