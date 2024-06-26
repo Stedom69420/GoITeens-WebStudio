@@ -6,7 +6,7 @@
     --button-text: #212121;
     --button-background-hover: #2196F3;
     --button-text-hover: #FFFFFF;
-    --photos-border:#EEEEEE;
+    --photos-border: #EEEEEE;
     --photos-describe-text: #212121;
     --photos-type-text: #757575;
     --photos-figure-background: #EEEEEE;
@@ -15,23 +15,28 @@
     --footer-text-adress: #FFFFFF;
     --footer-link: #FFFFFF99;
 }
+
 .color_blue {
     color: blue;
 }
+
 ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
+
 .container {
     width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-} 
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .header {
     background-color: var(--header-background);
 }
@@ -43,11 +48,11 @@ body {
     text-decoration: none;
 }
 
-.header-group-1{
+.header-group-1 {
     display: flex;
 }
 
-.header-item-group-1{
+.header-item-group-1 {
     margin-right: 50px;
 }
 
@@ -78,13 +83,16 @@ body {
 .section-buttons {
     margin-top: 94px;
 }
+
 .buttons-list {
     display: flex;
     justify-content: center;
 }
+
 .buttons-item:not(:last-child) {
     margin-right: 30px;
 }
+
 .button {
     background-color: var(--button-background);
     color: var(--button-text);
@@ -95,6 +103,7 @@ body {
     border: 0;
     border-radius: 4px;
 }
+
 .button:hover {
     background-color: var(--button-background-hover);
     color: var(--button-text-hover);
@@ -105,35 +114,46 @@ body {
     border: 0;
     border-radius: 4px;
 }
-.fotos-figure{
+
+.fotos-figure {
     width: 370px;
     margin: 0;
     background-color: var(--photos-figure-background);
     border: solid 1px var(--photos-border);
+    margin-bottom: 32px;
 }
+
 .photos-figcaption {
     background-color: var(--photos-figcaption-background);
+    padding: 20px 24px;
 }
+
 .photo {
     width: 100%;
 }
+
 .fotos-list {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
+
 .photo-description {
     color: var(--photos-describe-text);
     font-weight: 700;
     line-height: 200%;
     font-size: 18px;
+    margin-bottom: 4px;
 }
+
 .photo-type {
     color: var(--photos-type-text);
     font-weight: 400;
     line-height: 187%;
     font-size: 16px;
+    margin: 0;
 }
+
 .footer {
     background-color: var(--footer-background);
     padding: 60px 0;
@@ -157,6 +177,7 @@ body {
 .footer-img {
     margin-bottom: 20px;
 }
+
 .footer-invite {
     color: var(--footer-text-adress);
     font-weight: 700;
@@ -166,11 +187,13 @@ body {
 
 .footer-wrap {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-wrap-two {
     margin-left: 70px;
 }
+
 .footer-link {
     width: 40px;
     height: 40px;
@@ -186,8 +209,93 @@ body {
 .footer-link:hover {
     background-color: #2196F3;
 }
+
 .sosial-media-icons-svg {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
+}
+
+.figure-img-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    background-color: #2196F3E5;
+}
+
+.fotos-figure:hover .photo-overlay {
+    transform: translate(0);
+}
+
+.overlay-text {
+    color: #FFFFFF;
+    line-height: 155%;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 63px 24px;
+}
+
+.header-link_active {
+    color: #2196F3;
+}
+
+.header-link_active::after {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 4px;
+    background-color: #2196F3;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.footer-subscribe {
+    color: var(--footer-text-adress);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 117%;
+}
+
+.footer-subscribe-button {
+    font-weight: 700;
+    align-items: center;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrap-3-1 {
+    display: flex;
+}
+
+.subscribe-input {
+    border: 1px solid #FFFFFF4D;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.footer-wrap-3-svg {
+    fill: #FFFFFF;
+    height: 24px;
+    width: 24px;
+    align-self: center;
 }

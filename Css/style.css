@@ -563,3 +563,19 @@ h1.team-title {
 .input-with-icon {
     height: 40px;
 }
+.header-link_active {
+    color: #2196F3;
+  }
+  .header-link_active::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background-color: #2196F3;
+    bottom: 0;
+    left: 451px;
+    border-radius: 2px;
+  }
+  .header-list {
+    margin: 32px 0;
+  }
