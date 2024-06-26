@@ -248,15 +248,17 @@ body {
 
 .header-link_active {
     color: #2196F3;
+    position: relative;
+    width: 72px;
 }
 
 .header-link_active::after {
     content: "";
     position: absolute;
-    width: 74px;
+    width: 78px;
     height: 4px;
     background-color: #2196F3;
-    bottom: 0;
+    bottom: -28px;
     left: 0;
     border-radius: 2px;
 }
