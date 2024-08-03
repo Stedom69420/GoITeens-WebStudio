@@ -42,6 +42,7 @@ body {
     line-height: 117%;
     color: var(--header-item);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-group-1 {
@@ -267,6 +268,7 @@ h1.team-title {
     width: 170px;
     display: block;
     text-align: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-link:hover {
@@ -282,6 +284,7 @@ h1.team-title {
     height: 60px;
     padding: 16px 32px;
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sosial-media-icons-svg {
@@ -300,6 +303,7 @@ h1.team-title {
     border-radius: 50%;
     background-color: #FFFFFF1A;
     display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover {
@@ -311,6 +315,7 @@ h1.team-title {
     height: 20px;
     fill: #AFB1B8;
     padding: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .people-sosial-media-icons-svg:hover {
@@ -328,6 +333,7 @@ h1.team-title {
     background-color: #FFFFFF;
     margin-bottom: 30px;
     margin-top: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .people-link:hover {
@@ -366,46 +372,39 @@ h1.team-title {
 
 /* The Modal (background) */
 .modal {
-    /* display: none; */
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-    overflow: scroll;
-    /* Enable scroll if needed */
-    display: flex;
-    /* New */
-    align-items: center;
-    /* New */
-    justify-content: center;
-    /* New */
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
 }
 
 /* Modal Content */
 .modal-content {
-    position: relative;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    border: 1px solid #888;
-    background-color: #fefefe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 500px;
+    min-height: 300px;
+    padding: 15px;
+    background-color: #fefeff;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715);    
+    display: flex;
+    flex-direction: column;
 }
 
 /* The Close Button */
 .close {
     color: #aaa;
-    float: right;
+    display: block;
+    margin-left: auto;
     font-size: 28px;
     font-weight: bold;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close:hover,
@@ -414,10 +413,13 @@ h1.team-title {
     text-decoration: none;
     cursor: pointer;
 }
+.modal.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 
-/* This class is added/removed to show/hide the modal */
-.is-hidden {
-    display: none;
+.modal.is-hidden .modal-content{
+  transform: scale(0.8) translate(-60%, -60%);
 }
 
 /* This class is added to the body to prevent scrolling when the modal is open */
@@ -494,6 +496,7 @@ h1.team-title {
     border-radius: 4px;
     border: 1px solid #21212133;
     margin-bottom: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
     border: 1px solid #2196F3;
@@ -554,6 +557,7 @@ h1.team-title {
     fill: #212121;
     /* Change this to match your design */
     padding: 12px 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-input-wrap .input-with-icon {
@@ -574,7 +578,7 @@ h1.team-title {
     width: 48px;
     height: 4px;
     background-color: #2196F3;
-    bottom: -28px;
+    bottom: -38px;
     left: 0;
     border-radius: 2px;
   }

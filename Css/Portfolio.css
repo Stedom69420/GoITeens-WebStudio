@@ -46,6 +46,7 @@ body {
     line-height: 117%;
     color: var(--header-item);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-group-1 {
@@ -102,6 +103,7 @@ body {
     padding: 6px 25px;
     border: 0;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -113,6 +115,7 @@ body {
     padding: 6px 25px;
     border: 0;
     border-radius: 4px;
+    box-shadow: 1px 1px 0.4em #696969;
 }
 
 .fotos-figure {
@@ -121,6 +124,10 @@ body {
     background-color: var(--photos-figure-background);
     border: solid 1px var(--photos-border);
     margin-bottom: 32px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fotos-figure:hover {
+    box-shadow: 1px 1px 0.4em #696969;
 }
 
 .photos-figcaption {
@@ -300,4 +307,8 @@ body {
     height: 24px;
     width: 24px;
     align-self: center;
+}
+
+.header-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
