@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    padding: 0;
+    @extend %flex-space;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import "WebStudio/unitils/variebles";
+
+@import "WebStudio/header"; 
+@import "WebStudio/solutions";
+@import "WebStudio/description";
+@import "WebStudio/what-we-do";
+@import "WebStudio/team";
+@import "WebStudio/clients";
+@import "WebStudio/footer";
+@import "WebStudio/modal"

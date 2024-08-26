@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,7 +20,8 @@
         <ul class="header-list">
           <li class="header-item"><img class="header-photo" src="img/WebStudio-header.png" alt="logo"></li>
           <div class="header-group-1">
-            <li class="header-item header-item-group-1"><a class="header-link header-link_active" href="#">Студія</a></li>
+            <li class="header-item header-item-group-1"><a class="header-link header-link_active" href="#">Студія</a>
+            </li>
             <li class="header-item header-item-group-1"><a class="header-link" href="Portfolio.html">Портфоліо</a></li>
             <li class="header-item header-item-group-1"><a class="header-link" href="#">Контакти</a></li>
           </div>
@@ -44,30 +46,30 @@
   <main class="main">
     <section class="section-effective-solutions">
       <div class="container">
-        <h1 class="effective-solutions-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ
+        <h1 class="effective-solutions-title" data-aos="fade-up">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ
           <br /> ВАШОГО БІЗНЕСУ
         </h1>
-        <button class="effective-solutions-button" data-modal-open>Замовити послугу</button>
+        <button class="effective-solutions-button" data-modal-open data-aos="fade-up">Замовити послугу</button>
       </div>
     </section>
     <section class="section-description">
       <div class="container">
         <ul class="description-list">
-          <li class="description-item description-item-1">
+          <li class="description-item description-item-1" data-aos="fade-right">
             <h3 class="description-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="description-text">Ідейні міркування, і навіть початок повсякденної роботи з формування
               позиції.</p>
           </li>
-          <li class="description-item description-item-2">
+          <li class="description-item description-item-2" data-aos="fade-up">
             <h3 class="description-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="description-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
               себе.</p>
           </li>
-          <li class="description-item description-item-3">
+          <li class="description-item description-item-3" data-aos="fade-down">
             <h3 class="description-title">ПЛАНУВАННЯ</h3>
             <p class="description-text">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li class="description-item description-item-4">
+          <li class="description-item description-item-4" data-aos="fade-left">
             <h3 class="description-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="description-text">Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.</p>
@@ -77,17 +79,17 @@
     </section>
     <section class="section-what-we-do">
       <div class="container">
-        <h1 class="what-we-do-title">Чим ми займаємося</h1>
+        <h1 class="what-we-do-title" data-aos="fade-up">Чим ми займаємося</h1>
         <ul class="what-we-do-list">
-          <li class="what-we-do-item">
+          <li class="what-we-do-item" data-aos="fade-right">
             <img class="what-we-do-photo" src="img/box 1.jpg">
             <p class="what-we-do-text">Десктопні додатки</p>
           </li>
-          <li class="what-we-do-item">
+          <li class="what-we-do-item" data-aos="fade-up">
             <img class="what-we-do-photo" src="img/box 2.png">
             <p class="what-we-do-text">Мобільні додатки</p>
           </li>
-          <li class="what-we-do-item">
+          <li class="what-we-do-item" data-aos="fade-left">
             <img class="what-we-do-photo" src="img/box 3.png">
             <p class="what-we-do-text">Дизайнерські рішення</p>
           </li>
@@ -96,9 +98,9 @@
     </section>
     <section class="section-team">
       <div class="container">
-        <h1 class="team-title">Наша команда</h1>
+        <h1 class="team-title" data-aos="fade-up">Наша команда</h1>
         <div class="team-container">
-          <figure class="team-figure">
+          <figure class="team-figure" data-aos="zoom-in-right">
             <img class="team-photo" src="img/imgperson_1.jpg" height="200">
             <figcaption class="team-figcaption">
               <p class="team-text-name"><b>Ігор Дем'яненко</b></p>
@@ -128,7 +130,7 @@
               </div>
             </figcaption>
           </figure>
-          <figure class="team-figure">
+          <figure class="team-figure" data-aos="zoom-in-up">
             <img class="team-photo" src="img/imgperson_2.jpg" height="200">
             <figcaption class="team-figcaption">
               <p class="team-text-name"><b>Ольга Рєпіна</b></p>
@@ -157,7 +159,7 @@
               </div>
             </figcaption>
           </figure>
-          <figure class="team-figure">
+          <figure class="team-figure" data-aos="zoom-in-up">
             <img class="team-photo" src="img/imgperson_3.jpg" height="200">
             <figcaption class="team-figcaption">
               <p class="team-text-name"><b>Микола Тарасов</b></p>
@@ -186,7 +188,7 @@
               </div>
             </figcaption>
           </figure>
-          <figure class="team-figure">
+          <figure class="team-figure" data-aos="zoom-in-left">
             <img class="team-photo" src="img/imgperson_4.jpg" height="200">
             <figcaption class="team-figcaption">
               <p class="team-text-name"><b>Михайло Єрмаков</b></p>
@@ -220,8 +222,8 @@
     </section>
     <section class="section-regular-clients">
       <div class="container">
-        <h2 class="mainn-h1">Постійні клієнти</h2>
-        <ul class="regular-clients-list">
+        <h2 class="mainn-h1" data-aos="fade-up">Постійні клієнти</h2>
+        <ul class="regular-clients-list" data-aos="fade-up">
           <li class="regular-clients-item">
             <a href="" class="regular-clients-link">
               <svg class="regular-clients-svg">
@@ -271,7 +273,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrap">
-        <div class="footer-wrap-one">
+        <div class="footer-wrap-one" data-aos="zoom-in-right">
           <img class="footer-img" src="img/WebStudio.png">
           <div class="footer-div">
             <address class="footer-p">м. Київ, пр-т Лесі Українки, 26</address>
@@ -279,7 +281,7 @@
             <p class="footer-text">+38 096 111 11 11</p>
           </div>
         </div>
-        <div class="footer-wrap-two">
+        <div class="footer-wrap-two" data-aos="zoom-in-up">
           <h3 class="footer-invite">Приєднуйтесь</h3>
           <div class="section-four-link-list footer-list">
             <a href="" class="section-four-link-item footer-link">
@@ -304,7 +306,7 @@
             </a>
           </div>
         </div>
-        <div class="footer-wrap-three">
+        <div class="footer-wrap-three" data-aos="zoom-in-left">
           <h3 class="footer-subscribe">Підпишіться на розсилку</h3>
           <div class="footer-wrap-3-1">
             <form class="footer-wrap-3-form">
@@ -331,17 +333,17 @@
       <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
       <form class="modal-form">
         <div class="label-input-wrap">
-          <label for="name" class="footer-label label-name">Ім'я</label>
+          <label for="name" class="modal-label label-name">Ім'я</label>
           <input class="form-input input-with-icon" type="text" name="name" placeholder="" minlength="3" required
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
-            <span class="icon-span">
-              <svg class="input-svg">
-                <use class="svg" href="symbol-defs.svg#icon-person"></use>
-              </svg>
-            </span>
+          <span class="icon-span">
+            <svg class="input-svg">
+              <use class="svg" href="symbol-defs.svg#icon-person"></use>
+            </svg>
+          </span>
         </div>
         <div class="label-input-wrap">
-          <label for="name" class="footer-label label-telephone">Телефон</label>
+          <label for="name" class="modal-label label-telephone">Телефон</label>
           <input class="form-input input-with-icon" type="tel" name="tel" placeholder="" required min="10" max="20">
           <span class="icon-span">
             <svg class="input-svg">
@@ -350,7 +352,7 @@
           </span>
         </div>
         <div class="label-input-wrap">
-          <label for="name" class="footer-label label-email">Пошта</label>
+          <label for="name" class="modal-label label-email">Пошта</label>
           <input class="form-input input-with-icon" type="email" name="email" placeholder="" required>
           <span class="icon-span">
             <svg class="input-svg">
@@ -359,19 +361,23 @@
           </span>
         </div>
         <div class="comment-wrap">
-          <label class="footer-label label-comment">Коментар</label>
-          <textarea class="form-input" name="message" id="comment" cols="30" rows="10" placeholder="Введіть текст" required
-            minlength="20"></textarea>
+          <label class="modal-label label-comment">Коментар</label>
+          <textarea class="form-input" name="message" id="comment" cols="30" rows="10" placeholder="Введіть текст"
+            required minlength="20"></textarea>
         </div>
         <div class="checkbox-wrap">
           <input type="checkbox" name="confirm" id="confirm" class="input-checkbox" required>
-          <label class="footer-label-2">Погоджуюся з розсилкою та приймаю 
-            <span class="footer-span">Умови договору</span></label>
+          <label class="modal-label-2">Погоджуюся з розсилкою та приймаю
+            <span class="modal-span">Умови договору</span></label>
         </div>
-        <button class="footer-sent-button">Відправити</button>
+        <button class="modal-sent-button">Відправити</button>
       </form>
     </div>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="model.js"></script>
 </body>
 

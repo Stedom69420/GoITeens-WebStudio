@@ -1,0 +1,49 @@
+.section-description {
+    background-color: $white;
+    padding: 94px 0;
+}
+
+h3.description-title {
+    color: $black;
+    font-weight: 700;
+    line-height: 114%;
+}
+
+p.description-text {
+    color: $grey;
+    font-weight: 400;
+    line-height: 171%;
+}
+
+.description-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.description-item {
+    width: 270px;
+
+    &::before {
+        background-color: #F5F4FA;
+        width: 100%;
+        padding: 25px 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+.description-item-1::before {
+    content: url('../img/antenna.png');
+}
+
+.description-item-2::before {
+    content: url('../img/Clock.png');
+}
+
+.description-item-3::before {
+    content: url('../img/computer-diagram.png');
+}
+
+.description-item-4::before {
+    content: url('../img/astronaut.png');
+}

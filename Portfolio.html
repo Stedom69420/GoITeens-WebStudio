@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,18 +48,18 @@
         <section class="section-buttons">
             <div class="container">
                 <ul class="buttons-list">
-                    <li class="buttons-item"><button class="button">Усі</button></li>
-                    <li class="buttons-item"><button class="button">Веб-сайти</button></li>
-                    <li class="buttons-item"><button class="button">Додатки</button></li>
-                    <li class="buttons-item"><button class="button">Дизайн</button></li>
-                    <li class="buttons-item"><button class="button">Маркетинг</button></li>
+                    <li class="buttons-item"><button class="button"  data-aos="zoom-in-right">Усі</button></li>
+                    <li class="buttons-item"><button class="button"  data-aos="zoom-in-down">Веб-сайти</button></li>
+                    <li class="buttons-item"><button class="button"  data-aos="zoom-in-up">Додатки</button></li>
+                    <li class="buttons-item"><button class="button"  data-aos="zoom-in-down">Дизайн</button></li>
+                    <li class="buttons-item"><button class="button"  data-aos="zoom-in-left">Маркетинг</button></li>
                 </ul>
             </div>
         </section>
         <section class="section-photos">
             <div class="container">
                 <ul class="fotos-list">
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (2).png" class="photo">
@@ -74,7 +75,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (3).png" class="photo">
@@ -90,7 +91,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (4).png" class="photo">
@@ -106,7 +107,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (5).png" class="photo">
@@ -122,7 +123,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item" data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (6).png" class="photo">
@@ -138,7 +139,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (7).png" class="photo">
@@ -154,7 +155,7 @@
                             </figcaption>
                         </figure class="fotos-figure">
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (8).png" class="photo">
@@ -170,7 +171,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (9).png" class="photo">
@@ -186,7 +187,7 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="fotos-item">
+                    <li class="fotos-item"  data-aos="fade-up">
                         <figure class="fotos-figure">
                             <div class="figure-img-wrap">
                                 <img src="img/img (10).png" class="photo">
@@ -209,7 +210,7 @@
     <footer class="footer">
         <div class="container">
           <div class="footer-wrap">
-            <div class="footer-wrap-one">
+            <div class="footer-wrap-one" data-aos="zoom-in-right">
               <img class="footer-img" src="img/WebStudio.png">
               <div class="footer-div">
                 <address class="footer-p">м. Київ, пр-т Лесі Українки, 26</address>
@@ -217,7 +218,7 @@
                 <p class="footer-text">+38 096 111 11 11</p>
               </div>
             </div>
-            <div class="footer-wrap-two">
+            <div class="footer-wrap-two" data-aos="zoom-in-up">
               <h3 class="footer-invite">Приєднуйтесь</h3>
               <div class="section-four-link-list footer-list">
                 <a href="" class="section-four-link-item footer-link">
@@ -242,7 +243,7 @@
                 </a>
               </div>
             </div>
-            <div class="footer-wrap-three">
+            <div class="footer-wrap-three" data-aos="zoom-in-left">
               <h3 class="footer-subscribe">Підпишіться на розсилку</h3>
               <div class="footer-wrap-3-1">
                 <form class="footer-wrap-3-form">
@@ -262,6 +263,10 @@
         </div>
     
       </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

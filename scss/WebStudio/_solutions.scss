@@ -1,0 +1,23 @@
+.section-effective-solutions {
+    background-image: url('../img/section-background.png');
+    padding: 200px 0px;
+}
+
+.effective-solutions-title {
+    font-weight: 900;
+    line-height: 136%;
+    color: $white;
+    margin-bottom: 30px;
+    font-size: 44px;
+    text-align: center;
+    @extend %flex;
+}
+
+.effective-solutions-button {
+    background-color: $light-blue;
+    color: $white;
+    font-weight: 700;
+    line-height: 187%;
+    margin: 0 auto;
+    display: block;
+}

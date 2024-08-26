@@ -1,0 +1,103 @@
+.footer {
+    background-color: $dark-blue;
+    padding: 60px 0;
+}
+
+.footer-p {
+    color: $white;
+    line-height: 171%;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.footer-text {
+    color: $grey;
+    font-size: 14px;
+    line-height: 171%;
+    font-weight: 400;
+}
+
+.footer-img {
+    margin-bottom: 20px;
+}
+
+.footer-invite {
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 117%;
+}
+
+.footer-wrap {
+    @extend %flex-space;
+}
+
+.footer-wrap-two {
+    margin-left: 70px;
+}
+
+.footer-link {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    background-color: $dark-grey;
+    display: inline-block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: $light-blue;
+    }
+}
+
+.footer-subscribe {
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 117%;
+}
+
+.footer-subscribe-button {
+    font-weight: 700;
+    align-items: center;
+    background-color: $light-blue;
+    color: $white;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 12px;
+    @extend %flex;
+}
+
+.footer-wrap-3-1 {
+    display: flex;
+}
+
+.subscribe-input {
+    border: 1px solid $dark-grey;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.footer-wrap-3-svg {
+    fill: $white;
+    height: 24px;
+    width: 24px;
+    align-self: center;
+}
+
+.sosial-media-icons-svg {
+    width: 20px;
+    height: 20px;
+    fill: $white;
+
+    &:hover {
+        fill: $white;
+    }
+}

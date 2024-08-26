@@ -1,0 +1,27 @@
+.color_blue {
+    color: blue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "Portfolio/unitils/variebles";
+
+@import "Portfolio/header";
+@import "Portfolio/buttons";
+@import "Portfolio/photos";
+@import "Portfolio/footer";
